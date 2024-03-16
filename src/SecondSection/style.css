@@ -1,0 +1,16 @@
+.SecondSection{
+    width: 100vw;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+.SecondSection h3{
+    font-size: 18px;
+}
+
+.SecondSection p{
+    width: 800px;
+    font-size: 32px;
+    text-align: center;
+}

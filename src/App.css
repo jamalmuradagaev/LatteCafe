@@ -1,4 +1,34 @@
+*{
+  box-sizing: border-box;
+}
 body{
-  background-color: rgb(247, 244, 241);
+  display: flex;
+  /* justify-content: center; */
+  flex-wrap: wrap;
   width: 100%;
+  background-color: rgb(247, 244, 241);
+  margin: 0;
+}
+
+div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img{
+  width: 20px;
+}
+
+p{
+  padding: 10px;
+}
+
+p a{
+  color: #D27487;
+  text-decoration: none;
+}
+
+h3{
+  padding: 10px;
 }

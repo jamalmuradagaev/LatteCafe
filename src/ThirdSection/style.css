@@ -1,0 +1,41 @@
+.ThirdSection{
+    width: 100vw;
+    height: 1200px;
+    background-color: #E9E9E3;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.ThirdSection div{
+    margin: 100px;
+}
+
+.GeneralInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: baseline;
+    color: #6F6F64;
+}
+
+.GeneralInfo h3{
+    font-size: 18px;
+}
+
+.DescriptionMenu{
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.Menu{
+    width: 600px;
+    height: 1000px;
+    background-color: white;
+    display: flex;
+    align-items: baseline;
+}
+
+h2{
+    margin: 50px;
+}

@@ -1,0 +1,23 @@
+.SixthSection{
+    height: 500px;
+    background-color: #4A2B33;
+    color: #D27487;
+
+}
+
+.SixthSection div{
+    width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.SixthSection p{
+    padding: 10px;
+    font-size: 18px;
+    width: 400px;
+}
+
+.SixthSection h5{
+    font-size: 47px;
+}

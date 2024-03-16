@@ -1,0 +1,11 @@
+.FirstSection{
+    width: 100vw;
+    height: 700px;
+    background-color: #4A2B33;
+}
+
+.FirstSection img{
+    width: 1000px;
+    height: 600px;
+    object-fit: cover;
+}

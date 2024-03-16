@@ -1,0 +1,21 @@
+.FourthSection{
+    height: 500px;
+    background-color: #AA9E54;
+    color: white;
+
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.FourthSection div{
+    display: block;
+}
+
+.FourthSection div h3{
+    font-size: 18px;
+}
+
+.FourthSection div p{
+    font-size: 25px;
+}

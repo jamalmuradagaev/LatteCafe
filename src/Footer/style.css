@@ -1,0 +1,9 @@
+.Footer{
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+}
+ 
+.intelligence{
+    color: #696969;
+}
