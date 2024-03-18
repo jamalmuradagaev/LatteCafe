@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './style.css'
 
-export default function Button({value}) {
-  return (
+export default function Button({value, onClick}) {
+  
 
-    <button className='Button'>
+  return (
+    <button className='Button' onClick={onClick}>
       {value}
     </button>
   )
