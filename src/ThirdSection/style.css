@@ -33,7 +33,19 @@
     height: 1000px;
     background-color: white;
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.Menu div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 15px;
+}
+
+.Menu div p{
+    padding: 0;
 }
 
 h2{

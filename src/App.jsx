@@ -8,6 +8,7 @@ import FourthSection from './FourthSection/FourthSection'
 import FifthSection from './FifthSection/FifthSection'
 import SixthSection from './SixthSection/SixthSection'
 import Footer from './Footer/Footer'
+// import { menu } from './data'
 
 export default function App() {
 
@@ -17,7 +18,7 @@ export default function App() {
 
       <FirstSection />
       <SecondSection />
-      <ThirdSection />
+      <ThirdSection/>
       <FourthSection />
       <FifthSection />
       <SixthSection />

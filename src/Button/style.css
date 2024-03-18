@@ -6,15 +6,12 @@
     background-color: #E9E9E3;
 }
 
-.Button p{
+.Button{
     font-size: 15px;
     color: #6F6F64;
 }
 
-.Button:active{
+.Button:focus{
     background-color: #6F6F64;
-}
-
-.Button p:active{
     color: #E9E9E3;
 }
