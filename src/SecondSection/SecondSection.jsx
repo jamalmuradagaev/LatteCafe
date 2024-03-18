@@ -2,6 +2,7 @@ import React from 'react'
 import './style.css'
 
 export default function SecondSection() {
+
   return (
     <div className='SecondSection'>
       <h3>About Us</h3>

@@ -8,8 +8,14 @@ header{
     color: #D27487;
 }
 
-.pages{
+.nav{
     display: flex;
     width: 300px;
     justify-content: space-between;
+}
+
+.nav button{
+    background-color: #4A2B33;
+    border: 0;
+    color: #D27487;
 }

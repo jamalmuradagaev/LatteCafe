@@ -24,7 +24,15 @@ export default function ThirdSection() {
       <div className='Menu'>
         <h2>Latte Cafe</h2>
 
+
         <div>
+          {value == undefined &&
+          <div>
+            <ListMenu type={menu[0][0].type} names={menu[0][0].names}/>
+            <ListMenu type={menu[0][1].type} names={menu[0][1].names}/>
+          </div>
+          }
+
           {value == 'Food Menu' &&
           <div>
             <ListMenu type={menu[0][0].type} names={menu[0][0].names}/>
