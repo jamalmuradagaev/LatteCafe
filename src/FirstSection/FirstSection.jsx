@@ -36,6 +36,7 @@ export default function FirstSection() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setImageIndex((imageIndex + 1) % images.length)
+      return true
     }, 3000);
 
     return () => clearTimeout(timer);
