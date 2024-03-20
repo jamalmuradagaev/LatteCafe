@@ -9,3 +9,13 @@
     height: 600px;
     object-fit: cover;
 }
+
+.fade-in-out {
+    position: absolute;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+/* .fade-in-out .fade-out {
+    opacity: 0;
+} */

@@ -1,11 +1,52 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './style.css'
-import interier from '../../public/interier.png'
+import interier_1 from '../../public/interier.png'
+import interier_2 from '../../public/interier_2.png'
+import interier_3 from '../../public/interier_3.png'
 
 export default function FirstSection() {
+  // старая реализация состояния для картинок
+  // const [image, setImage] = useState(interier_1)
+
+  // if (image == interier_1) {
+  //   setTimeout(() => {
+  //     setImage(interier_2)
+  //     return true
+  //   }, 3000);
+  // }
+  // if (image == interier_2) {
+  //   setTimeout(() => {
+  //     setImage(interier_3)
+  //     return true
+  //   }, 3000);
+  // }
+  // if (image == interier_3) {
+  //   setTimeout(() => {
+  //     setImage(interier_1)
+  //     return true
+  //   }, 3000);
+  // }
+
+
+  // рефакторинг
+  const images = [interier_1, interier_2, interier_3];
+
+  const [imageIndex, setImageIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setImageIndex((imageIndex + 1) % images.length)
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, [imageIndex]);
+
   return (
     <div className='FirstSection'>
-      <img src={interier} alt="" />
+      <img 
+        src={images[imageIndex]}
+        className={`fade-in-out`}
+      />
     </div>
   )
 }
