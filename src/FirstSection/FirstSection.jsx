@@ -32,21 +32,25 @@ export default function FirstSection() {
   const images = [interier_1, interier_2, interier_3];
 
   const [imageIndex, setImageIndex] = useState(0);
+  const [isFirstImageVisible, setIsFirstImageVisible] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setImageIndex((imageIndex + 1) % images.length)
-      return true
+      setIsFirstImageVisible(!isFirstImageVisible);
     }, 3000);
 
     return () => clearTimeout(timer);
-  }, [imageIndex]);
+  }, [imageIndex, isFirstImageVisible]);
 
   return (
     <div className='FirstSection'>
-      <img 
+      <img
+        src={images[(imageIndex + 1) % images.length]}
+        className={`fade-in-out ${isFirstImageVisible ? '' : 'hidden'}`}
+      />
+      <img
         src={images[imageIndex]}
-        className={`fade-in-out`}
+        className={`fade-in-out ${isFirstImageVisible ? 'hidden' : ''}`}
       />
     </div>
   )

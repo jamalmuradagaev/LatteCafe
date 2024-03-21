@@ -4,18 +4,20 @@
     background-color: #4A2B33;
 }
 
-.FirstSection img{
+/* .FirstSection img{
     width: 1000px;
     height: 600px;
     object-fit: cover;
-}
+} */
 
 .fade-in-out {
+    width: 1000px;
+    height: 600px;
     position: absolute;
-    opacity: 1;
-    transition: opacity 1s ease;
-}
-
-/* .fade-in-out .fade-out {
+    object-fit: cover;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .fade-in-out.hidden {
     opacity: 0;
-} */
+  }
