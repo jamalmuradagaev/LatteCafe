@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React, { forwardRef, useEffect, useState } from 'react'
 import './style.css'
 import interier_1 from '../../public/interier.png'
 import interier_2 from '../../public/interier_2.png'
 import interier_3 from '../../public/interier_3.png'
 
-export default function FirstSection() {
+export default function FirstSection(){
   // старая реализация состояния для картинок
   // const [image, setImage] = useState(interier_1)
 

@@ -1,20 +1,20 @@
-import React from 'react'
+import React, { forwardRef, useRef } from 'react'
 import './style.css'
 import inst from '../../public/inst.png'
 import tg from '../../public/telegram.png'
 import fb from '../../public/facebook.png'
 
-import SecondSection from '../SecondSection/SecondSection'
+const Header = ({secondComponent, thirdComponent, fourthComponent, sixthComponent}) => {
 
-export default function Header() {
-
+  // const ComponentRef = useRef(ref)
+  
   return (
     <header>
       <div className='nav'>
-        <button onClick={() => window.scrollBy({let: 0, top: 800, behavior: 'smooth'})}>About</button>
-        <button onClick={() => window.scrollBy({let: 0, top: 1500, behavior: 'smooth'})}>Menu</button>
-        <button onClick={() => window.scrollBy({let: 0, top: 2700, behavior: 'smooth'})}>Booking</button>
-        <button onClick={() => window.scrollBy({let: 0, top: 3850, behavior: 'smooth'})}>Info</button>
+        <button onClick={() => secondComponent.current.scrollIntoView({behavior: 'smooth'})}>About</button>
+        <button onClick={() => thirdComponent.current.scrollIntoView({behavior: 'smooth'})}>Menu</button>
+        <button onClick={() => fourthComponent.current.scrollIntoView({behavior: 'smooth'})}>Booking</button>
+        <button onClick={() => sixthComponent.current.scrollIntoView({behavior: 'smooth'})}>Info</button>
       </div>
 
       <h1>Latte Cafe</h1>
@@ -27,3 +27,6 @@ export default function Header() {
     </header>
   )
 }
+
+
+export default Header

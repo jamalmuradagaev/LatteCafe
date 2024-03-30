@@ -1,17 +1,17 @@
-import React, { useState } from 'react'
+import React, { forwardRef, useState } from 'react'
 import Button from '../Button/Button.jsx'
 import './style.css'
 import ListMenu from '../ListMenu/ListMenu.jsx'
 import { menu } from '../data.js'
 
-export default function ThirdSection() {
+const ThirdSection = forwardRef((props, ref) => {
   const [value, setValue] = useState()
   const handleClick = (val) => {
     setValue(val)
   }
 
   return (
-    <div className='ThirdSection'>
+    <div className='ThirdSection' ref={ref}>
       <div className='GeneralInfo'>
         <h3>Menu</h3>
         <p className='DescriptionMenu'>We change our menu every season. <br /> Here is what we are currently dishing up.</p>
@@ -57,4 +57,7 @@ export default function ThirdSection() {
       </div>
     </div>
   )
-}
+})
+
+
+export default ThirdSection

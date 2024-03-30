@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import './style.css'
 
-export default function FourthSection() {
+const FourthSection = forwardRef((props, ref) => {
   return (
-    <div className='FourthSection'>
+    <div className='FourthSection' ref={ref}>
       <div>
         <h3>Location</h3>
         <p>101 Cuba St, <br />Te Aro, Wellington</p>
@@ -21,4 +21,6 @@ export default function FourthSection() {
       </div>
     </div>
   )
-}
+})
+
+export default FourthSection

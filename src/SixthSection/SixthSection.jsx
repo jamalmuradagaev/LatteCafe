@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import './style.css'
 
-export default function SixthSection() {
+const SixthSection = forwardRef((props, ref) => {
   return (
-    <div className='SixthSection'>
+    <div className='SixthSection' ref={ref}>
       <div>
         <h5>Award winning <br /> cafe and bar.</h5>
         <p>Our restaurant is a place where you can enjoy a high level of service, fine cuisine and an atmosphere of coziness and comfort. We are proud of our distinctive qualities that make us unique in the market: individual approach to each guest, high quality products, unique menu, elegant design and cozy atmosphere, regular events and special offers
@@ -11,4 +11,6 @@ export default function SixthSection() {
       </div>
     </div>
   )
-}
+})
+
+export default SixthSection

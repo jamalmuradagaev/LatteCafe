@@ -1,6 +1,6 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import './App.css'
-import Header from './Header/Header'
+import Header from './Header/Header.jsx'
 import FirstSection from './FirstSection/FirstSection'
 import SecondSection from './SecondSection/SecondSection'
 import ThirdSection from './ThirdSection/ThirdSection'
@@ -11,17 +11,26 @@ import Footer from './Footer/Footer'
 // import { menu } from './data'
 
 export default function App() {
+  const secondTargetComponentRef = useRef(null)
+  const thirdTargetComponentRef = useRef(null)
+  const fourthTargetComponentRef = useRef(null)
+  const sixthTargetComponentRef = useRef(null)
 
   return (
     <>
-      <Header />
+      <Header 
+        secondComponent={secondTargetComponentRef} 
+        thirdComponent={thirdTargetComponentRef} 
+        fourthComponent={fourthTargetComponentRef} 
+        sixthComponent={sixthTargetComponentRef}
+      />
 
       <FirstSection />
-      <SecondSection />
-      <ThirdSection/>
-      <FourthSection />
+      <SecondSection ref={secondTargetComponentRef}/>
+      <ThirdSection ref={thirdTargetComponentRef}/>
+      <FourthSection ref={fourthTargetComponentRef}/>
       <FifthSection />
-      <SixthSection />
+      <SixthSection ref={sixthTargetComponentRef}/>
 
       <Footer />
     </>
